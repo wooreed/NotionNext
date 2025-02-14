@@ -18,11 +18,16 @@ const BLOG = {
   BIO: process.env.NEXT_PUBLIC_BIO || 'fucking life and fucked by life', // 作者简介
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://tangly1024.com', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, 博客', // 网站关键词 英文逗号隔开
+  BLOG_FAVICON: process.env.NEXT_PUBLIC_FAVICON || '/favicon.ico', // blog favicon 配置
   BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '', // 备案号 闽ICP备XXXXXX
   BEI_AN_LINK: process.env.NEXT_PUBLIC_BEI_AN_LINK || 'https://beian.miit.gov.cn/', // 备案查询链接，如果用了萌备等备案请在这里填写
 
   // RSS订阅
   ENABLE_RSS: process.env.NEXT_PUBLIC_ENABLE_RSS || true, // 是否开启RSS订阅功能
+
+  // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
+CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'wooreed@foxmail.com', // 邮箱地址 
+CONTACT_LINKEDIN: process.env.NEXT_PUBLIC_CONTACT_LINKEDIN || 'http://linkedin.com/in/yuanying-wu-8a3966330', // 你的linkedIn 首页
 
   // 其它复杂配置
   // 原配置文件过长，且并非所有人都会用到，故此将配置拆分到/conf/目录下, 按需找到对应文件并修改即可
